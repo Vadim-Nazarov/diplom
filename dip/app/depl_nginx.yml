@@ -1,0 +1,43 @@
+
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: my-app
+  namespace: default
+  labels:
+    k8s-app: my-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      k8s-app: my-app
+  template:
+    metadata:
+      name: my-app
+      labels:
+        k8s-app: my-app
+    spec:
+      containers:
+      - name: my-nginx
+        image: docker.io/vadimn88/applications:1.0
+        imagePullPolicy: Always
+        ports:
+        - containerPort: 80
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: my-app
+  namespace: default
+  labels:
+    k8s-app: my-app
+
+spec:
+  ports:
+    - name: my-app
+      protocol: TCP
+      port: 80
+      nodePort: 30080
+  selector:
+    k8s-app: my-app
+  type: NodePort
