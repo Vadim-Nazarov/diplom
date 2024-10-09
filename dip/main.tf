@@ -56,7 +56,7 @@ resource "yandex_compute_instance" "master" {
   }
 }
 
-# Node1 VM
+# Node VM
 resource "yandex_compute_instance" "nodes" {
   for_each = local.nodes
 
