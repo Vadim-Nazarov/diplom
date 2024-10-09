@@ -311,7 +311,7 @@ Terraform apply
 
 ![изображение](https://github.com/user-attachments/assets/fc16bb8b-8d16-448d-8d30-a4c902bfb14b)
 
-Далее разворачиваю приложение в кластере Kubernetes на master ноде
+Далее разворачиваю приложение в кластере Kubernetes на master ноде с помощью манифеста [depl_nginx.yml](https://github.com/Vadim-Nazarov/diplom/blob/main/dip/app/depl_nginx.yml)
 
 ![изображение](https://github.com/user-attachments/assets/05609afc-01ab-40dd-903f-fc2e9d0e902f)
 
