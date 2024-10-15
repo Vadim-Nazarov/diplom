@@ -79,6 +79,8 @@ Terraform apply
 
 На предыдущем шаге подготовил инфраструктуру для разворачивания kubernetes кластера и файл [hosts.yml](https://github.com/Vadim-Nazarov/diplom/blob/main/dip/ansible/inventory/hosts.yaml)
 
+Заходим на master
+
 Клонирую репозиторий:
 
     git clone https://github.com/kubernetes-sigs/kubespray.git
