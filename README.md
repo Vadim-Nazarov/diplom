@@ -323,6 +323,41 @@ Terraform apply
 
 ![изображение](https://github.com/user-attachments/assets/05c5deba-a2e1-4015-9aa7-4ee9d5accd84)
 
+### Установка и настройка CI/CD
+
+Создал отдельный репозиторий на githab
+
+      https://github.com/Vadim-Nazarov/nginx
+
+Для автоматической сборки docker image и деплоя приложения при изменении кода использую Github actions
+
+Создал Personal access token в Dockerhub
+
+![изображение](https://github.com/user-attachments/assets/37bf758c-70a3-4566-a0e1-d66afbe1b205)
+
+Создал секреты github секреты для доступа к DockerHub
+
+![изображение](https://github.com/user-attachments/assets/80601137-d352-4ec6-be0f-1c45a8c93ac7)
+
+      echo "/root/.kube/config" | base64 - Конфигурация доступа к кластеру
+
+добавляю рабочие процессы GitHub Actions каталоге репозитория nginx  [cicd.yaml](https://github.com/Vadim-Nazarov/nginx/blob/main/.github/workflows/cicd.yaml) 
+
+Вот тут сталиваюсь с ситуацией - образ докера изменяется - собирается отправляется в докер хаб, но при попытке диплоя не могу его задиплоить в кубер, не пойму как решить данную проблему, вижу что нет соединения но почему ...?
+
+Если коммит начинается с v*, то приложение собирается, отправляется в docker hub и ставиться в кластер. [helm](https://github.com/Vadim-Nazarov/nginx/tree/main/nginxci)
+
+![изображение](https://github.com/user-attachments/assets/40838547-bccd-4b4b-ab39-db62779331c8)
+
+![изображение](https://github.com/user-attachments/assets/88882c1c-248a-4743-9831-964151d7791e)
+
+
+
+
+
+
+
+
 
 
 
