@@ -349,7 +349,8 @@ Terraform apply
 
 ![изображение](https://github.com/user-attachments/assets/40838547-bccd-4b4b-ab39-db62779331c8)
 
-![изображение](https://github.com/user-attachments/assets/88882c1c-248a-4743-9831-964151d7791e)
+![изображение](https://github.com/user-attachments/assets/6abf8c52-ac9b-47bc-9b0d-0f3b39440b58)
+
 
 
 
