@@ -339,7 +339,7 @@ Terraform apply
 
 ![изображение](https://github.com/user-attachments/assets/80601137-d352-4ec6-be0f-1c45a8c93ac7)
 
-      echo "/root/.kube/config" | base64 - Конфигурация доступа к кластеру
+      echo /root/.kube/config | base64 - Конфигурация доступа к кластеру
 
 добавляю рабочие процессы GitHub Actions каталоге репозитория nginx  [cicd.yaml](https://github.com/Vadim-Nazarov/nginx/blob/main/.github/workflows/cicd.yaml) 
 
