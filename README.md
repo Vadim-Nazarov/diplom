@@ -339,18 +339,13 @@ Terraform apply
 
 ![изображение](https://github.com/user-attachments/assets/80601137-d352-4ec6-be0f-1c45a8c93ac7)
 
-      echo /root/.kube/config | base64 - Конфигурация доступа к кластеру
+в ссикреты добавляю конфиг кубера
 
-добавляю рабочие процессы GitHub Actions каталоге репозитория nginx  [cicd.yaml](https://github.com/Vadim-Nazarov/nginx/blob/main/.github/workflows/cicd.yaml) 
+добавляю рабочие процессы GitHub Actions каталоге репозитория nginx  [cicd.yaml](https://github.com/Vadim-Nazarov/nginx/blob/main/.github/workflows/cicd.yaml
 
-Вот тут сталиваюсь с ситуацией - образ докера изменяется - собирается отправляется в докер хаб, но при попытке диплоя не могу его задиплоить в кубер, не пойму как решить данную проблему, вижу что нет соединения но почему ...?
+При коммите с символом "v" происходит сборка образа и деплой в кубере
 
-Если коммит начинается с v*, то приложение собирается, отправляется в docker hub и ставиться в кластер. [helm](https://github.com/Vadim-Nazarov/nginx/tree/main/nginxci)
-
-![изображение](https://github.com/user-attachments/assets/40838547-bccd-4b4b-ab39-db62779331c8)
-
-![изображение](https://github.com/user-attachments/assets/6abf8c52-ac9b-47bc-9b0d-0f3b39440b58)
-
+![изображение](https://github.com/user-attachments/assets/ec40390e-36c5-4d56-b0ef-61b610397177)
 
 
 
