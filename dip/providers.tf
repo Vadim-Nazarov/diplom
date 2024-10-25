@@ -1,4 +1,3 @@
-  GNU nano 7.2                                                                          providers.tf
 terraform {
   required_providers {
     yandex = {
